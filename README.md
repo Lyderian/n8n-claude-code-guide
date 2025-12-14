@@ -200,7 +200,7 @@ To continue a conversation, use the `-r` (resume) flag with the same session ID:
 
 **SSH Node Command (Follow-up):**
 ```bash
-claude -r --session-id {{ $('Code').item.json.sessionId }} -p "Why is one of them down?"
+claude -r {{ $('Code').item.json.sessionId }} -p "Why is one of them down?"
 ```
 
 The `-r` flag resumes the previous session, so Claude remembers the context of your earlier questions.
